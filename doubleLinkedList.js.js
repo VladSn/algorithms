@@ -60,5 +60,3 @@ class DoubleLinkedList {
     console.log(`TAIL: ${this.tail.value}`);
   }
 }
-
-const list = new DoubleLinkedList(2);
