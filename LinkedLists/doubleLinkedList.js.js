@@ -100,7 +100,8 @@ class DoublyLinkedList {
     }
     return current;
   }
-
+  
+  // Set the value of the node at a given index
   set(index, value) {
     const node = this.get(index);
 
