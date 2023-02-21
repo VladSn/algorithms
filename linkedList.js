@@ -11,7 +11,8 @@ class LinkedList {
     this.tail = this.head;
     this.length = 1;
   }
-
+  
+  // adding a node to the end of the list
   append(value) {
     const newNode = new Node(value);
     this.tail.next = newNode;
@@ -19,7 +20,8 @@ class LinkedList {
     this.length++;
     return this;
   }
-
+  
+  // adding a node to the beginning of the list
   prepend(value) {
     const newNode = new Node(value);
     newNode.next = this.head;
