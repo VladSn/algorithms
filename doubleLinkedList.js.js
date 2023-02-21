@@ -12,7 +12,8 @@ class DoubleLinkedList {
     this.tail = this.head;
     this.length = 1;
   }
-
+  
+  // adding a node to the end of the list
   append(value) {
     const newNode = new Node(value);
     newNode.prev = this.tail;
@@ -21,7 +22,8 @@ class DoubleLinkedList {
     this.length++;
     return this;
   }
-
+  
+   // adding a node to the beginning of the list
   prepend(value) {
     const newNode = new Node(value);
     this.head.prev = newNode;
